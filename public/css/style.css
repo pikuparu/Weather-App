@@ -1,0 +1,145 @@
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  border-radius: 20%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  position: relative; /* Ensure the image is the reference point for absolute positioning */
+}
+
+.image-container {
+  position: relative;
+  text-align: center; /* Center align text (input and button) within the container */
+}
+
+.input {
+  position: absolute;
+  top: 20%; /* Adjust this value to position the input and button inside the image */
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent; /* Make the background fully transparent */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.input label {
+  display: block;
+  margin: 5px 0;
+  background: rgba(255, 255, 255, 0.3); /* Make the background more transparent */
+  padding: 5px; /* Add some padding for better appearance */
+  border-radius: 3px; /* Add slight rounding to corners */
+  font-family: 'Georgia', serif; /* Apply a classy font */
+  font-size: 20px; /* Adjust font size */
+  color:#81B29A; /* Set text color for better readability */
+}
+.input input:hover {
+  background: rgba(255, 255, 255, 0.7); /* Slightly change the background on hover for a subtle effect */
+}
+
+.input input, .input button {
+  display: block;
+  margin: 5px 0;
+  background: rgba(255, 255, 255, 0.5); /* Make the background more transparent */
+  border: none; /* Remove default borders */
+  padding: 10px; /* Add some padding for better appearance */
+  border-radius: 5px; /* Add slight rounding to corners */
+  width: 100%; /* Make input and button take full width */
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+  font-family: 'Arial', sans-serif; /* Use a clean, readable font */
+  font-size: 20px; /* Adjust font size */
+  color: #81B29A; /* Set text color for better readability */
+  cursor: pointer;
+}
+.input input:focus {
+  background: rgba(255, 255, 255, 0.7); /* Ensure the background stays consistent on focus */
+  outline: none; /* Remove the default focus outline */
+  border: 2px solid #81B29A; /* Set a custom border color on focus */
+  color: #81B29A; /* Ensure the text color remains consistent */
+}
+
+.input button {
+  background: rgba(255, 255, 255, 0.5); /* Match the button background with the input */
+}
+
+.input button:hover {
+  background: rgba(255, 255, 255, 0.7); /* Slightly change the background on hover for a subtle effect */
+}
+
+#first {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  border-radius: 20%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+
+.weather-info {
+  position: absolute;
+  top: 15%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.temperature {
+  font-size: 5em; /* Adjust font size */
+  color: white; /* Text color, adjust based on your image background */
+  margin: 0; /* Remove default margin */
+  font-family: 'Pacifico', cursive; /* Apply cursive font */
+}
+
+.weather-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px; /* Space between temperature and weather details */
+}
+
+.weather-icon {
+  width: 50px; /* Adjust the size of the weather icon */
+  height: auto;
+}
+
+.description {
+  font-size: 1em; /* Adjust font size */
+  color: white; /* Text color, adjust based on your image background */
+  margin-top: 5px; /* Space between icon and description */
+  font-family: 'Arial', sans-serif; /* Apply a clean, readable font */
+}
+
+.footer {
+  background-color: white; /* Dark background color for contrast */
+  padding: 15px 0; /* Vertical padding */
+  text-align: center; /* Center align text */
+  color: #ddd; /* White text color */
+  position: fixed; /* Fix the footer at the bottom */
+  width: 100%; /* Full width */
+  bottom: 0; /* Align to the bottom */
+}
+
+.social-links {
+  margin-bottom: 10px; /* Space between social links and author */
+}
+
+.social-links a {
+  color: #ddd; /* White color for links */
+  margin: 0 10px; /* Space between links */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.2em; /* Increase font size */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.social-links a:hover {
+  color: #CB997E; /* Change color on hover to a contrast color */
+}
+
+.author {
+  margin: 0; /* Remove default margin */
+  font-size: 1em; /* Adjust font size */
+}
